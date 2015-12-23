@@ -4,14 +4,13 @@ package com.goit.module4.DistanceCalc;
     public class Runner {
 
         public static void main(String[] args) {
-            double x1 = 200;
-            double x2 = 100;
-            double y1 = 200;
-            double y2 = 100;
+            Point p1 = new Point(100,100);
+            Point p2 = new Point(200,200);
+            DistanceCalculatorUtil dist = new DistanceCalculatorUtil();
+            //System.out.println(dist.distanceCalc(p1.getCoordinateX(),p2.getCoordinateX(),p1.getCoordinateY(), p2.getCoordinateY()));
+            //System.out.println();
+            System.out.println(dist.distanceCalc(p1,p2));
 
-            Distance distance = new Distance();
 
-            System.out.println("Distance between dots with coordinates of  : ("  + x1 +" , " +y1+ ") and  ("+x2 +", and " + y2+ ") is "+ distance.Distance(x1,x2,y1,y2));
-
+        }
     }
-}
